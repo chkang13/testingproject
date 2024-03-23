@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.13'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.msa'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '11'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // 유효성 검사가 필요한 Request 객체에 Validation 어노테이션을 사용해 유효성 검사 적용
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // 개발 단계에서 자동으로 다시 로드되는 기능을 제공하여 개발자가 변경 사항을 신속하게 확인
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
