@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/apigatewayservice" />
     <file type="web" url="file://$PROJECT_DIR$/boardservice" />
+    <file type="web" url="file://$PROJECT_DIR$/configservice" />
+    <file type="web" url="file://$PROJECT_DIR$/discoveryservice" />
     <file type="web" url="file://$PROJECT_DIR$/memberservice" />
     <file type="web" url="file://$PROJECT_DIR$/noticeservice" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="11" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
-  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
